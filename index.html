@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Map</title>
+    <link rel = "stylesheet" href ="style.css"/>
+    <link rel="manifest" href="manifest.json">
+    <script src="xuly.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+        try {
+            navigator.serviceWorker.register('SW.js');
+            console.log('SW registered');
+          
+        }catch(error){
+            console.log('SW reg failed');
+        }
+      }
+           
+      
+        </script>
+</head>
+<body>
+    <div id= "search" onclick= "doimau(1,'Search.html')" style = "background-color: lightblue" class = "style">
+        Search
+    </div>
+    <div id = "find" onclick="doimau(2,'Find.html')"  class = "style">
+        Tìm đường
+    </div>
+    <div id = "hostel" onclick="doimau(3,'hostel.html')"  class = "style">
+        Search hostel
+    </div>
+    <div id = "noidung">
+        <iframe id="Frame" src = "Search.html" width="100%" height="750px"></iframe>
+    </div>
+</body>
+</html>

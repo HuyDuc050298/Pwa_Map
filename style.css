@@ -1,0 +1,15 @@
+.style{
+    background-color:lightgray;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+
+}
+#noidung{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 130px;
+    height: 750px;
+    width: 90%;
+}
